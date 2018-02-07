@@ -1,0 +1,90 @@
+
+<!-- We don't need full layout here, because this page will be parsed with Ajax-->
+<!-- Top Navbar-->
+<div class="navbar">
+  <div class="navbar-inner">
+    <div class="left"><a href="#" class="back link"> <i class="icon icon-back"></i><span></span></a></div>
+    <div class="center sliding">Perfil</div>
+    <div class="right">
+      <a class="link" onclick="logout()"><i class="f7-icons size-22">logout</i></a>
+    </div>
+  </div>
+</div>
+<div class="pages">
+  <!-- Page, data-page contains page name-->
+  <div data-page="perfil" class="page">
+    <!-- Scrollable page content-->
+    <div class="page-content" id="profile">
+      <div class="content-block-title">Ingrese los datos para su perfil:</div>
+      <div class="list-block">
+        <ul>
+          <li>
+            <div class="item-content">
+              <div class="item-inner"> 
+                <div class="item-title label">Nombre</div>
+                <div class="item-input">
+                  <input type="text" id="name" placeholder="Su nombre" readonly/>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="item-content">
+              <div class="item-inner"> 
+                <div class="item-title label">Apellido</div>
+                <div class="item-input">
+                  <input type="text" id="lastname" placeholder="Su apellido" readonly/>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="item-content">
+              <div class="item-inner"> 
+                <div class="item-title label">Teléfono</div>
+                <div class="item-input">
+                  <input type="number" id="telefono" placeholder="Su teléfono" readonly/>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="item-content">
+              <div class="item-inner"> 
+                <div class="item-title label">Edad</div>
+                <div class="item-input">
+                  <input type="number" id="edad" placeholder="Su edad" readonly/>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="item-content">
+              <div class="item-inner"> 
+                <div class="item-title label">Dirección</div>
+                <div class="item-input">
+                  <input type="text" id="dir" placeholder="Su dirección" readonly/>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="buttons content-block">
+          <div class="row">
+          <div class="col-50">
+            <a href="#" id="editar" class="button button-big button-fill color-blue">Editar</a>
+          </div>
+          <div class="col-50"><a href="#" id="submit" class="button button-big button-fill color-green">Guardar</a></div>
+          
+        </div>
+      </div>
+    </div>
+    <!-- Bottom Toolbar-->
+      <div class="toolbar">
+        <div class="toolbar-inner">
+          <a href="home.html" class="link"><i class="f7-icons size-22">home</i></a><a href="geolocation.html" class="link"><i class="f7-icons size-22">world</i></a><a href="perfil.html" class="link"><i class="f7-icons size-22">person</i></a> 
+        </div>
+      </div>
+  </div>
+</div>

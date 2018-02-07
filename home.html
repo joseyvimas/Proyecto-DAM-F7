@@ -1,0 +1,47 @@
+
+  <!-- Pages, because we need fixed-through navbar and toolbar, it has additional appropriate classes-->
+  <div class="pages navbar-through toolbar-through">
+    <!-- Page, data-page contains page name-->
+    <div class="navbar">
+        <div class="navbar-inner">
+          <!-- We have home navbar without left link-->
+          <div class="center sliding">Home</div>
+          <div class="right">
+            <a class="link" onclick="logout()"><i class="f7-icons size-22">logout</i></a>
+          </div>
+       </div>
+      </div>
+    <div data-page="home" class="page">
+      
+      <!-- Scrollable page content-->
+      <div class="page-content" id ="home">
+        <div style="text-align: center;"><img src="img/logo.jpg" style="width: 90%;"></div>
+       
+        <div class="list-block">
+          <div style="width: 60%; margin:0 auto;">
+            <a href="catalog.html" class="button button-big button-fill color-blue">Ver Catálogo</a>
+          </div>
+        </div>
+        
+        
+        <div id="swipe" class="swiper-container swiper-1">
+          <div class="swiper-pagination"></div>
+            <div class="swiper-wrapper">
+              <div class="swiper-slide" style="text-align: center;"><img src="img/flash.gif" style="width: 90%;"></div>
+              <div class="swiper-slide" style="text-align: center;"><img src="img/batman.gif" style="width: 90%;"></div>
+              <div class="swiper-slide" style="text-align: center;"><img src="img/wonderwoman.gif" style="width: 90%;"></div>
+              <div class="swiper-slide" style="text-align: center;"><img src="img/superman.gif" style="width: 90%;"></div>
+              <div class="swiper-slide" style="text-align: center;"><img src="img/aquaman.gif" style="width: 90%;"></div>
+              <div class="swiper-slide" style="text-align: center;"><img src="img/flash2.gif" style="width: 90%;"></div>
+            </div>
+        </div>
+      </div>
+      <!-- Bottom Toolbar-->
+      <div class="toolbar">
+        <div class="toolbar-inner">
+          <a href="home.html" class="link"><i class="f7-icons size-22">home</i></a><a href="geolocation.html" class="link"><i class="f7-icons size-22">world</i></a><a href="perfil.html" class="link"><i class="f7-icons size-22">person</i></a> 
+        </div>
+      </div>
+    </div>
+      
+  </div>

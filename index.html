@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113457993-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-113457993-2');
+    </script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    
+    <title>Proyecto-DAM</title>
+
+    <!-- Libreria CCS - Framework 7-->
+    <link rel="stylesheet" href="css/framework7-icons/css/framework7-icons.css">
+    <link rel="stylesheet" href="css/framework7.ios.min.css">
+    <link rel="stylesheet" href="css/framework7.ios.colors.min.css">
+    <link rel="stylesheet" href="css/framework7.material.colors.min.css">
+    <link rel="stylesheet" href="css/framework7.material.min.css">
+    
+
+
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="css/my-app.css">
+  </head>
+  <body>
+    <!-- Vistas-->
+    <div class="views">
+      <!-- Your main view, should have "view-main" class-->
+      <div class="view view-main">
+          <div class="navbar" >
+            <div class="navbar-inner">
+            </div>
+          </div>
+          <div class="pages">
+            <div data-page="splash" class="page">
+            <!-- Scrollable page content-->
+              <div class="page-content">
+                  <div class="preload" id="preload">
+                    <div class ="logo">
+                      <div style="text-align: center;"><img src="img/logo.jpg" style="width: 90%;"></div>
+                    </div>
+                    <div class="loader-frame">
+                      <div class="loader1" id="loader1"></div>
+                      <div class="loader2" id="loader2"></div>
+                    </div>
+                  </div>
+              </div>
+              <!-- Bottom Toolbar-->
+              <div class="toolbar">
+              </div>
+            </div>
+
+          </div>
+          
+      </div>
+    </div>
+
+
+
+    <!--Firebase-->
+    <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyDTrjt2U3GrMCgVPeTS2YGw_fOMzDQWAuE",
+        authDomain: "proyecto-dam-94893.firebaseapp.com",
+        databaseURL: "https://proyecto-dam-94893.firebaseio.com",
+        projectId: "proyecto-dam-94893",
+        storageBucket: "proyecto-dam-94893.appspot.com",
+        messagingSenderId: "59112468215"
+      };
+      firebase.initializeApp(config);
+    </script>
+
+    <!--Template-->
+    <script id="catalogProducts" type="text/template7">
+        <li class="card demo-card-header-pic">
+          <div style="background-image:url({{Poster}}); background-size: 200px 200px;" class="card-header align-items-flex-end item-title">{{Title}}</div>
+          <div class="card-content card-content-padding">
+            <p class="date">Año: {{Year}}, Tipo: {{Type}}</p>
+          </div>
+          <div class="card-footer"><a onclick="compartir('{{Title}}', '{{Year}}','{{Type}}')" target="_blank" class="link"><i class="f7-icons botones" >social_twitter_fill</i></a><a onclick="getProduct('{{imdbID}}')" id="vermas"><i class="f7-icons botones">more</i></a></div> 
+        </li>
+    </script>
+
+    <!--Google Maps-->
+     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCa5IDAiDiYn5zIZfbYxV1d8Bo9MziPDu8"> </script>
+
+    <!-- Libreria JS Framework7 -->
+    <script type="text/javascript" src="js/framework7.min.js"></script>
+    <!-- APP JS-->
+    <script type="text/javascript" src="js/my-app.js"></script>
+  </body>
+</html>
