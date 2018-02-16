@@ -7,7 +7,7 @@ Proyecto realizado con Framework 7, el cual posee las siguientes funcionalidades
 -Geolocalización (Google Maps).
 -Catálogo de películas/series [Descripción, Imagen, Rating].
 -Vista individual de cada película/serie.
--Tweet el producto.
+-Compartir con twitter una película/serie.
 -Google Analytics.
 
 Para probarlo solo hace falta clonar el proyecto y colocarlo en un http-d.
